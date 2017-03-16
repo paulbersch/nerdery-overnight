@@ -3,7 +3,7 @@
 Hola. Here we go:
 
 1. Go to https://github.com/ChicagoWebFriends-irl/nerdery-overnight, log in if you haven't already and up at the top right, you'll see a little button that says Fork. Push it. It may ask you where you want to fork to, and chose where you want the fork to live (or your own account, which is fine.) You'll be taken to your fork of the nerdery-overnight repo. 
-2. Just click clone or download and clone your version of the repo down to your machine. 'git clone https://github.com/ChicagoWebFriends-irl/nerdery-overnight.git`
+2. Just click clone or download and clone your version of the repo down to your machine. `git clone https://github.com/ChicagoWebFriends-irl/nerdery-overnight.git`
 3. Because you cloned your fork as your new origin, that will now be your origin repo. But people will be adding new features and updates to the main repo. So how do you keep up? Easy! Set up the ChicagoWebFriends-irl/nerdery-overnight main repo as another remote. In terminal the command is `git remote add chiwebfriends https://github.com/ChicagoWebFriends-irl/nerdery-overnight.git`
 4. To check your work use `git remote -v` You should see your own repo as origin and the ChicagoWebFriends-irl/nerdery-overnight repo as chiwebfriends 
 5. Now, you can pull from this new remote to keep your fork up to date. Kind of like how git pull origin master updates your local repo. Only instead of origin, you're pulling from chiwebfriends. The command to update would be as such: `git pull chiwebfriends master`
