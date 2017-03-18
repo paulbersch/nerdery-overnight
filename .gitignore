@@ -42,6 +42,8 @@ wp-content/themes/*
 .DS_Store
 node_modules/
 
+!circle.yml
+
 # Ignore built files
 # wp-content/themes/TRCDO/style.css
 # wp-content/themes/TRCDO/style.css.map
