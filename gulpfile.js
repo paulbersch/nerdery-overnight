@@ -35,13 +35,17 @@ function init(done) {
   }
 
   let sassTask = new glob.Glob(dir, function(er, files) {
-
+    new glob.Glob('node_modules/foundation-sites/_vendor/sassy-lists/**',
+      function(er, newFiles) {
+        files = files.push(newFiles);
+      })
     let fileNames = files.map(function(file) {
       if (isSassPartial(file)) return path.basename(file, ext);
     }).filter(Boolean);
 
     fileNames.splice(fileNames.length, 0, '_settings', '_util');
-    fileNames.splice(-1, 2);
+    fileNames.splice(71, 1);
+    fileNames.splice(57, 1);
 
     inq.prompt([{
       type: 'confirm',
