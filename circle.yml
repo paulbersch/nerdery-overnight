@@ -20,4 +20,4 @@ deployment:
     branch: circleci
     commands:
       - ssh git@git.wpengine.com info
-      - git push git@git.wpengine.com:production/trcdo.git paul
+      - git push git@git.wpengine.com:production/trcdo.git master
