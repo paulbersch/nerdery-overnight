@@ -42,9 +42,11 @@ wp-content/themes/*
 .DS_Store
 node_modules/
 
+!circle.yml
+
 # Ignore built files
-# wp-content/themes/TRCDO/style.css
-# wp-content/themes/TRCDO/style.css.map
+wp-content/themes/TRCDO/style.css
+wp-content/themes/TRCDO/style.css.map
 # wp-content/themes/TRCDO/js/main.min.js.map
 # wp-content/themes/TRCDO/js/main.min.js
 # wp-content/themes/TRCDO/sass/style.css.map
