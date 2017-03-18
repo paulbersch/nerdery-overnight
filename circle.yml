@@ -1,0 +1,19 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker-compose up -d
+
+test:
+  override:
+    - docker up
+
+deployment:
+  hub:
+    branch: circleci
+    commands:
+      - ssh git@git.wpengine.com info
+      - git push git@git.wpengine.com:production/trcdo.git paul
