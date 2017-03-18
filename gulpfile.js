@@ -1,3 +1,5 @@
+'use strict';
+
 // Grab our gulp packages
 var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer'),
@@ -25,7 +27,7 @@ function clean(done) {
 // Should only be run when a project starts or when you want to start over
 function init(done) {
   const dir = 'node_modules/foundation-sites/scss/**';
-  const dist = 'wp-content/themes/trcdo/scss';
+  const dist = 'wp-content/themes/trcdo/sass/';
   const ext = '.scss';
 
   function isSassPartial(file) {
@@ -38,8 +40,8 @@ function init(done) {
       if (isSassPartial(file)) return path.basename(file, ext);
     }).filter(Boolean);
 
-    fileNames.splice(1, 0, '_settings', '_util');
-    fileNames.splice(-2, 2);
+    fileNames.splice(fileNames.length, 0, '_settings', '_util');
+    fileNames.splice(-1, 2);
 
     inq.prompt([{
       type: 'confirm',
@@ -56,9 +58,9 @@ function init(done) {
         files.map(function(file) {
           return gulp.src(file)
           .pipe($.ignore.exclude(!isSassPartial(file)))
-          .pipe(gulp.dest(dist));
+          .pipe(gulp.dest(dist.concat('foundation/')));
         });
-        fs.appendFile(dist.concat('/style.scss'), "@import '" + fileNames.join("',\n '") + "';", 'utf8', function(err) {
+        fs.appendFile(dist.concat('style.scss'), "@import '" + fileNames.join("',\n '") + "';", 'utf8', function(err) {
           if (err) throw err;
           console.log('The new local stylesheets were added to app.scss');
         });
