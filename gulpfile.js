@@ -1,13 +1,23 @@
+'use strict';
+
 // Grab our gulp packages
 var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer'),
   gulpLoadPlugins = require('gulp-load-plugins'),
   yargs = require('yargs'),
-  browserSync = require('browser-sync').create();
+  browserSync = require('browser-sync').create(),
+  rimraf = require('rimraf');
 
 const $ = gulpLoadPlugins();
 const wpPath = "./wp-content/themes/trcdo/";
 const PRODUCTION = !!(yargs.argv.production);
+
+
+// Delete the "dist" folder
+// This happens every time a build starts
+function clean(done) {
+  rimraf('dist', done);
+}
 
 gulp.task('images', function() {
   return gulp.src(wpPath + 'images/*.{svg,png,jpg,gif}')
@@ -46,7 +56,7 @@ gulp.task('styles', function() {
 gulp.task('serve', function() {
 
   browserSync.init({
-    proxy: "localhost:8000",
+    proxy: "localhost:6969",
   });
 
   gulp.watch(wpPath + 'sass/**/*.scss',  gulp.series('styles')).on('change', browserSync.reload);
