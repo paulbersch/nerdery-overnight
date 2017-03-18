@@ -17,7 +17,7 @@ test:
 
 deployment:
   hub:
-    branch: circleci
+    branch: master
     commands:
       - ssh git@git.wpengine.com info
       - git push git@git.wpengine.com:production/trcdo.git master
