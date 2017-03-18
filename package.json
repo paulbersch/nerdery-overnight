@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp",
     "start": "gulp serve",
-    "deploy": "gulp --production"
+    "deploy": "gulp --production",
+    "new": "gulp init"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/chicagowebfriends-irl/nerdery-overnight/issues"
   },
- "dependencies": {
+  "dependencies": {
     "autoprefixer": "^6.4.0",
     "browser-sync": "^2.18.8",
     "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
@@ -35,8 +36,20 @@
     "gulp-uglify": "^2.0.0",
     "yargs": "^6.6.0"
   },
+  "devDependencies": {
+    "foundation-sites": "^6.3.1",
+    "rimraf": "^2.3.3",
+    "glob": "^7.1.1",
+    "gulp-ignore": "^2.0.1",
+    "inquirer": "^1.2.2"
+  },
   "engines": {
     "node": ">= 5.1.0"
   },
-  "homepage": "https://github.com/chicagowebfriends-irl/nerdery-overnight#readme"
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "homepage": "https://github.com/chicagowebfriends-irl/nerdery-overnight#readme",
 }
