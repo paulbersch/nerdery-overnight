@@ -16,7 +16,7 @@ if ( ! function_exists( 'trcdo_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function trcdo_setup() {
-	/*
+	/*f
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on TRCDO, use a find and replace
@@ -107,9 +107,13 @@ add_action( 'widgets_init', 'trcdo_widgets_init' );
 function trcdo_scripts() {
 	wp_enqueue_style( 'trcdo-style', get_stylesheet_uri() );
 
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'trcdo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'trcdo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'trcdo-app-js', get_template_directory_uri() . '/app.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
