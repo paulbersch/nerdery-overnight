@@ -39,10 +39,7 @@
   },
   "devDependencies": {
     "foundation-sites": "^6.3.1",
-    "rimraf": "^2.3.3",
-    "glob": "^7.1.1",
-    "gulp-ignore": "^2.0.1",
-    "inquirer": "^1.2.2"
+    "rimraf": "^2.3.3"
   },
   "engines": {
     "node": ">= 5.1.0"

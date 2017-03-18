@@ -6,10 +6,6 @@ var gulp  = require('gulp'),
   gulpLoadPlugins = require('gulp-load-plugins'),
   yargs = require('yargs'),
   browserSync = require('browser-sync').create(),
-  fs = require('fs'),
-  path = require('path'),
-  glob = require('glob'),
-  inq = require('inquirer'),
   rimraf = require('rimraf');
 
 const $ = gulpLoadPlugins();
@@ -21,60 +17,6 @@ const PRODUCTION = !!(yargs.argv.production);
 // This happens every time a build starts
 function clean(done) {
   rimraf('dist', done);
-}
-
-// Copy what's in node_modules/foundation_emails/scss to src/assets/src
-// Should only be run when a project starts or when you want to start over
-function init(done) {
-  const dir = 'node_modules/foundation-sites/scss/**';
-  const dist = 'wp-content/themes/trcdo/sass/';
-  const ext = '.scss';
-
-  function isSassPartial(file) {
-    return (path.extname(file) == ext && path.basename(file).charAt(0) == '_');
-  }
-
-  let sassTask = new glob.Glob(dir, function(er, files) {
-    new glob.Glob('node_modules/foundation-sites/_vendor/sassy-lists/**',
-      function(er, newFiles) {
-        files = files.push(newFiles);
-      })
-    let fileNames = files.map(function(file) {
-      if (isSassPartial(file)) return path.basename(file, ext);
-    }).filter(Boolean);
-
-    fileNames.splice(fileNames.length, 0, '_settings', '_util');
-    fileNames.splice(71, 1);
-    fileNames.splice(57, 1);
-
-    inq.prompt([{
-      type: 'confirm',
-      message: "Doing this will completely overwrite any changes you've made to the foundation stylesheets.\nOnly do this at the beginning of projects or to start over.\nDo you want to continue? \n",
-      default: true,
-      name: 'start'
-    },{
-      type: 'confirm',
-      message: 'Are any of your files in src/assets/scss named the following? Can you check?\nThis will overwrite them.\n' + fileNames.join('\n') + '\n',
-      default: false,
-      name: 'doubleCheck'
-    }]).then(function(answer) {
-      if (answer.start && !answer.doubleCheck) {
-        files.map(function(file) {
-          return gulp.src(file)
-          .pipe($.ignore.exclude(!isSassPartial(file)))
-          .pipe(gulp.dest(dist.concat('foundation/')));
-        });
-        fs.appendFile(dist.concat('style.scss'), "@import '" + fileNames.join("',\n '") + "';", 'utf8', function(err) {
-          if (err) throw err;
-          console.log('The new local stylesheets were added to app.scss');
-        });
-        console.log('\nDone and copied over. Go take a look, maybe check on app.scss and have a super awesome day.');
-      } else {
-        console.log("\nI'm sorry, Dave. I'm afraid I can't do that. \nMake sure none of those filenamess are in app/src/scss and run \'npm run new\' again.");
-      }
-    });
-  });
-  done();
 }
 
 gulp.task('images', function() {
@@ -114,7 +56,7 @@ gulp.task('styles', function() {
 gulp.task('serve', function() {
 
   browserSync.init({
-    proxy: "localhost:8000",
+    proxy: "localhost:6969",
   });
 
   gulp.watch(wpPath + 'sass/**/*.scss',  gulp.series('styles')).on('change', browserSync.reload);
@@ -126,7 +68,3 @@ gulp.task('default', gulp.series(
   'styles',
   // 'scripts',
   'images'));
-
-// Initialize
-gulp.task('init',
-  gulp.series(init));
