@@ -1,6 +1,6 @@
 # nerdery-overnight
 
-Hola. Here we go:
+Hola! 😄 Here we go:
 
 1. Go to https://github.com/ChicagoWebFriends-irl/nerdery-overnight, log in if you haven't already and up at the top right, you'll see a little button that says Fork. Push it. It may ask you where you want to fork to, and chose where you want the fork to live (or your own account, which is fine.) You'll be taken to your fork of the nerdery-overnight repo. 
 2. Just click clone or download and clone your version of the repo down to your machine. `git clone https://github.com/ChicagoWebFriends-irl/nerdery-overnight.git`
