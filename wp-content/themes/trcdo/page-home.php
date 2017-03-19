@@ -14,7 +14,7 @@ get_header(); ?>
 							<p>All of our services are free.</p>
 						</div>
 					</div>
-					<div class="columns">
+					<div class="columns shrink">
 						<button class="button action hero-cta">
 							Need Help?
 						</button>
