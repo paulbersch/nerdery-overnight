@@ -138,10 +138,12 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	padding: 0 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
-    min-height: 18rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+		@include breakpoint(large) {
+      min-height: 18rem;
+    }
     h2 {
     	text-align: center;
     }
