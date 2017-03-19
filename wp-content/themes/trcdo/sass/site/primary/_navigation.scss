@@ -1,12 +1,48 @@
 .site-branding{
+  svg {
+    padding: 0rem;
+    margin: .5rem -1rem;
+  }
+  background: $dark-gray;
+  ul {
+    background: $dark-gray;
+  }
   .button {
     margin:0;
-    // padding: 1em 2em;
+    font-size: 1.25rem;
+    padding: .5rem 2rem;
+
     a:visited {
-      color: white;
+      color: white;// TODO: $accent
     }
   }
+
   li {
-   list-style:none;
+    a {
+      color: white;
+      font-size: .85rem;
+    }
+    &:last-of-type {
+      // margin-left: 1rem;
+      border-left: solid 2px white;
+      a {
+        padding: 0rem 1rem;
+      }
+    }
+  }
+  @media (max-width: 1276px) {
+    li a {
+      padding: 1rem .5rem;
+    }
+    li:last-of-type {
+      a {
+        padding: 0rem .5rem;
+      }
+    }
+  }
+  @media (max-width: 1176px) {
+    li a {
+      font-size: .68rem;
+    }
   }
 }
