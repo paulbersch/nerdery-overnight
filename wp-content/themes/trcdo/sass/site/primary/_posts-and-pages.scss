@@ -34,19 +34,21 @@
   display: flex;
   -ms-flex-flow: row wrap;
   flex-flow: column nowrap;
+  justify-content: center;
  	@include breakpoint(large) {
-		height: 20rem;
-	};
+		height: 36rem;
+	}
 }
 
 .hero-headline,
 .program-headline {
+	margin: 1rem auto 2rem;
 	@include breakpoint(large) {
 		text-align: center;
 	};
 }
 
-.hero-cta {
+.button.hero-cta {
 	@include breakpoint(large) {
 		text-align: center;
 		margin: auto;
@@ -55,6 +57,12 @@
 
 .banner {
 	margin: 2rem 0;
+}
+
+.banner-content,
+.programs,
+.final-cta {
+	margin: 3rem 0;
 }
 
 .banner-metric {
@@ -101,8 +109,9 @@
 .banner-content {
 	background: $medium-gray;
 	padding: 1rem auto;
+	color: $white;
 	p {
-		color: $white;
+		margin: 1rem auto;
 	}
 }
 
@@ -112,6 +121,7 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   $i: index($colors-list, $current-color);
   .program-#{$i} {
   	padding: 0 1rem;
+  	margin-top: 1.5rem;
     background-color: $current-color;
     h1 {
     	text-align: center;
