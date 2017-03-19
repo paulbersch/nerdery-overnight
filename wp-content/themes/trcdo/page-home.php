@@ -78,7 +78,7 @@ get_header(); ?>
 							Total Resource Community Development Organization is a nonprofit that feeds and houses those in need, develops leadership and character in the next generation.
 						</p>
 						<p>
-							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we help, would greatly appreciate it.
+							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we assist, would greatly appreciate it.
 						</p>
 					</div>
 				</div>
