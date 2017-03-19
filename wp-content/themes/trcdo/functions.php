@@ -45,6 +45,8 @@ function trcdo_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'trcdo' ),
+		'menu-2' => esc_html__( 'Footer Nav', 'trcdo' ),
+		'menu-3' => esc_html__( 'Footer Contact', 'trcdo' )
 	) );
 
 	/*
