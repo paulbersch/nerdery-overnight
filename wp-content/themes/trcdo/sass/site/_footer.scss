@@ -1,0 +1,9 @@
+.site-footer {
+  background-color: $accent-color;
+  padding: 1rem;
+
+  & .menu li a {
+    padding: 0;
+    color: $white;
+  }
+}
