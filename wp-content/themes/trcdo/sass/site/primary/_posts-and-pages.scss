@@ -30,9 +30,17 @@
 .hero {
 	@include full-width;
 	background-image: url(http://placekitten.com/g/1500);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: column nowrap;
+ 	@include breakpoint(large) {
+		height: 20rem;
+	};
 }
 
-.hero-headline {
+.hero-headline,
+.program-headline {
 	@include breakpoint(large) {
 		text-align: center;
 	};
@@ -41,9 +49,68 @@
 .hero-cta {
 	@include breakpoint(large) {
 		text-align: center;
+		margin: auto;
 	};
 }
 
 .banner {
+	margin: 2rem 0;
+}
+
+.banner-metric {
+	margin: 1rem 0;
 	text-align: center;
+	h1 {
+		color: #21BBFF;
+	}
+	&:nth-of-type(2) {
+	position: relative;
+		&:after {
+		  content:"";
+		  background: $light-gray;
+		  position: absolute;
+	  	top: 125%;
+	  	left: 40%;
+		  height: 3px;
+		  width: 20%;
+			@include breakpoint(large) {
+		  	top: 25%;
+		  	left: 0;
+			  height: 50%;
+			  width: 3px;
+		  }
+		}
+		&:before {
+		  content:"";
+		  background: $light-gray;
+		  position: absolute;
+	  	top: -25%;
+	  	right: 40%;
+		  height: 3px;
+		  width: 20%;
+			@include breakpoint(large) {
+		  	top: 25%;
+		  	right: 0;
+			  height: 50%;
+			  width: 3px;
+	  	}
+		}
+	}
+}
+
+.banner-content {
+	background: $medium-gray;
+}
+
+$colors-list: $primary-color $secondary-color $success-color $warning-color $alert-color;
+
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .program-#{$i} {
+  	padding: 0 1rem;
+    background-color: $current-color;
+    h1 {
+    	text-align: center;
+    }
+  }
 }

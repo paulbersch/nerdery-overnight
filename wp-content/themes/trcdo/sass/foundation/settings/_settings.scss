@@ -41,7 +41,7 @@
 //  36. Tooltip
 //  37. Top Bar
 
-@import 'util/util';
+@import '../util/util';
 
 // 1. Global
 // ---------
@@ -50,15 +50,15 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  primary: #21BBFF,
+  secondary: #59C5E0,
+  success: #90D0C2,
+  warning: #C8DBA3,
+  alert: #FFE584,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$light-gray: #fefefe;
+$medium-gray: #666666;
+$dark-gray: #2D2E2B;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
