@@ -27,6 +27,11 @@
 	<button class="close-button" aria-label="Close menu" type="button" data-close>
 	  <span aria-hidden="true">&times;</span>
 	</button>
+	<nav class="text-center show-for-large columns large-7" data-topbar role="navigation" id="site-navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'menu-4',
+															'menu_id' => 'mobile-nav-menu',
+															) ); ?>
+	</nav>
 </div>
 <div class="off-canvas-content" data-off-canvas-content>
 <button type="button" class="button" data-toggle="mobileNav">Open Menu</button>
