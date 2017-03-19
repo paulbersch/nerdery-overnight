@@ -144,7 +144,6 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
     justify-content: space-around;
 		@include breakpoint(large) {
       min-height: 18rem;
-  		padding: 0 1rem;
     }
     h2 {
     	text-align: center;
