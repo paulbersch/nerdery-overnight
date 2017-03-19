@@ -15,6 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:700" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -31,7 +32,7 @@
 																		) ); ?>
 				</nav>
 				<div class="columns flex-container align-right">
-					<a href="#" class="button">Donate</a>
+					<a href="#" class="button primary">Donate</a>
 				</div>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
