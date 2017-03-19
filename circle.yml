@@ -25,6 +25,8 @@ deployment:
       - npm install
       - npm run deploy
       # yolo
+      - git config --global user.email "paul.bersch@gmail.com"
+      - git config --global user.name "Paul Bersch"
       - git add -f wp-content/themes/trcdo/app.min.js
       - git add -f wp-content/themes/trcdo/style.css
       - git commit -m 'Generated Assets!'
