@@ -23,6 +23,7 @@ deployment:
     branch: master
     commands:
       - npm install
+      - npm run deploy
       # yolo
       - git add -f wp-content/themes/trcdo/app.min.js
       - git add -f wp-content/themes/trcdo/style.css
