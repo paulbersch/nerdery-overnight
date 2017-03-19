@@ -26,3 +26,24 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.hero {
+	@include full-width;
+	background-image: url(http://placekitten.com/g/1500);
+}
+
+.hero-headline {
+	@include breakpoint(large) {
+		text-align: center;
+	};
+}
+
+.hero-cta {
+	@include breakpoint(large) {
+		text-align: center;
+	};
+}
+
+.banner {
+	text-align: center;
+}
