@@ -16,21 +16,41 @@ get_header(); ?>
 			<section class="row align-center align-middle">
 				<div class="columns small-10">
 					<p class="page-content">
+					<?php
+					while ( have_posts() ) : the_post();
+
+						get_template_part( 'template-parts/content', 'page' );
+
+					endwhile; // End of the loop.
+					?>
 
 					</p>
 				</div>
 			</section>
 			<section class="row align-center align-middle">
 				<div class="columns small-2">
-					<button class="button primary">
-						Donate
-					</button>
+						<?php
+						// Calls to Action
+						$cta_selected = get_field("howtohelp_ctas");
+							if( $cta_selected ): 
+								echo '<button class="button primary">';
+									foreach( $cta_selected as $cta ): 
+										echo $cta ;
+									endforeach; 
+								echo '</button>';
+							endif; 
+						?>
+					
 				</div>
 			</section>
 			<section class="row align-center align-middle">
 				<div class="columns small-10">
 					<p class="page-content">
-
+					<?php
+					// HowToHelp Lower
+					$lower_content = get_field("howtohelp_lower");
+						echo '<div>' . $lower_content . '</div>';
+					?>
 					</p>
 				</div>
 			</section>
