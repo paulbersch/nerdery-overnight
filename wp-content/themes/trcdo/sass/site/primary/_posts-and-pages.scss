@@ -133,7 +133,11 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	padding: 0 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
-    h2 {
+    min-height: 12rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    h1 {
     	text-align: center;
     }
   }
