@@ -13,18 +13,17 @@
     padding: .5rem 2rem;
 
     a:visited {
-      color: white;// TODO: $accent
+      color: $white;
     }
   }
 
   li {
     a {
-      color: white;
+      color: $white;
       font-size: .85rem;
     }
     &:last-of-type {
-      // margin-left: 1rem;
-      border-left: solid 2px white;
+      border-left: solid 2px $white;
       a {
         padding: 0rem 1rem;
       }
