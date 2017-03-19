@@ -22,3 +22,10 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin full-width {
+	width: 100%;
+	width: 100vw;
+	min-width: 100%;
+	min-width: 100vw;
+}
