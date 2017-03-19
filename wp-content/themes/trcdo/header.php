@@ -32,7 +32,7 @@
 																		) ); ?>
 				</nav>
 				<div class="columns flex-container align-right">
-					<a href="#" class="button primary">Donate</a>
+					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UFUB78XUR5BW4" class="button primary">Donate</a>
 				</div>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
