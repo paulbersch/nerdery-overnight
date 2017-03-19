@@ -1,23 +1,29 @@
 machine:
   pre:
-    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
-    - pip install --upgrade pip
-    - pip install docker-compose
+      #- curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
+      #- pip install --upgrade pip
+      #- pip install docker-compose
+    - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    - sudo apt-get install -y nodejs
+
   services:
     - docker
 
 dependencies:
   override:
-    - docker info
-    - docker-compose up -d
+      #- docker info
+      #- docker-compose up -d
 
 test:
   override:
-    - docker-compose up -d
+      # - docker-compose up -d
 
 deployment:
   hub:
     branch: master
     commands:
-      - ssh git@git.wpengine.com info
+      - npm install
+        #yolo
+      - git add -f ./wp-content/themes/trcdo/
+      - git commit -m 'Generated Assets!'
       - git push git@git.wpengine.com:production/trcdo.git master
