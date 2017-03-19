@@ -55,8 +55,9 @@ $foundation-palette: (
   success: #90D0C2,
   warning: #C8DBA3,
   alert: #FFE584,
+  action: #DE4B1F,
 );
-$light-gray: #fefefe;
+$light-gray: #c4c4c4;
 $medium-gray: #666666;
 $dark-gray: #2D2E2B;
 $black: #0a0a0a;
@@ -240,19 +241,19 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 1.2rem 7.6rem;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: get-color(action);
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem,
+  default: 2.5rem,
+  large: 5rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
