@@ -7,3 +7,50 @@
     color: $white;
   }
 }
+
+.footer-nav-container .menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 64em) {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    flex: 0 1 auto;
+    padding: 0 0.2rem;
+
+    &:nth-child(odd) {
+      border-right: 1px solid $white;
+      padding-right: 0.5rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.copyright {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+
+  @media screen and (min-width: 64em) {
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-nav-container.smaller-nav .menu {
+  @media screen and (min-width: 64em) {
+    justify-content: flex-end;
+  }
+
+}
+
+.footer-nav-container.smaller-nav a {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
