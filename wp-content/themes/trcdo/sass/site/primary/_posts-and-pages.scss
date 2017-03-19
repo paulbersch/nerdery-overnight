@@ -59,6 +59,7 @@
 }
 
 .button.hero-cta {
+	padding: 1.7rem 7.875rem;
 	@include breakpoint(large) {
 		text-align: center;
 		margin: auto;
@@ -67,6 +68,10 @@
 
 .banner {
 	margin: 2rem 0;
+}
+
+.banner-content {
+	padding: 1rem 0;
 }
 
 .banner-content,
@@ -133,11 +138,11 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	padding: 0 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
-    min-height: 12rem;
+    min-height: 18rem;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    h1 {
+    justify-content: space-around;
+    h2 {
     	text-align: center;
     }
   }

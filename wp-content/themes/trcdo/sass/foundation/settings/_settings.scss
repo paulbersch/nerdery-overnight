@@ -241,7 +241,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 1.2rem 7.6rem;
+$button-padding: 1.7rem 2rem;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: get-color(primary);
@@ -252,7 +252,7 @@ $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 2.5rem,
+  default: 1.5rem,
   large: 5rem,
 );
 $button-palette: $foundation-palette;
