@@ -9,13 +9,14 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="hero align-center align-middle">
 					<div class="columns small-6">
-						<h1 class="hero-headline">
-							I am a header.
-						</h1>
+						<div class="hero-headline">
+							<p>Total Resource CDO has been providing community services in Illinois since 1999, helping thousands of families, providing local leadership, and directing millions of dollars of aid to those in need.</p>
+							<p>All of our services are free.</p>
+						</div>
 					</div>
 					<div class="columns shrink">
 						<button class="button action hero-cta">
-							Button
+							Need Help?
 						</button>
 					</div>
 				</div>
@@ -23,16 +24,16 @@ get_header(); ?>
 			<section class="banner">
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-3 banner-metric">
-						<h1>85858595</h1>
-					people served
+						<h2>39,857</h2>
+						People Served
 					</div>
 					<div class="columns small-12 large-3 banner-metric">
-						<h1>85858595</h1>
-						people served
+						<h2>$5.75 Million</h2>
+						In Assistance Received
 					</div>
 					<div class="columns small-12 large-3 banner-metric">
-						<h1>85858595</h1>
-						people served
+						<h2>538</h2>
+						Homes Saved
 					</div>
 				</div>
 			</section>
@@ -41,39 +42,44 @@ get_header(); ?>
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-4">
 						<div class="program-1" data-equalizer-watch>
-							<h1>Header</h1>
-							<p>Lorem Ipsum</p>
+							<h1>Housing Assistance</h1>
+							<p>We offer financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-2" data-equalizer-watch>
-							<h1>Header</h1>
-							<p>Lorem Ipsum</p>
+							<h1>Utilities and Energy Assistance</h1>
+							<p>We can help you meet your gas and electric bills, and connect to services to better insulate your home.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-3" data-equalizer-watch>
-							<h1>Header</h1>
-							<p>Lorem Ipsum</p>
+							<h1>Harvest for the World Food Pantry</h1>
+							<p>Our food pantry feeds hundreds of families and provides worthwhile community service opportunities.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-4" data-equalizer-watch>
-							<h1>Header</h1>
-							<p>Lorem Ipsum</p>
+							<h1>Youth Services</h1>
+							<p>We use a wide variety of programs focused on empowerment and prevention to help at-risk youth between 8 and 21 years of age.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-5" data-equalizer-watch>
-						<h1>Header</h1>
-						<p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+						<h1>Health Services</h1>
+						<p>We empower people make realistic changes that lead to a healthy lifestyle. We direct a variety of fun year-round activities.</p>
 					</div>
 				</div>
 			</section>
 			<section class="banner-content">
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-9">
-						<p>Nulla fringilla, augue vel vehicula aliquam, arcu erat viverra mauris, in viverra sapien nisi sed neque. Vivamus sem erat, feugiat vel quam non, pharetra varius dolor. Proin lacinia venenatis orci. Quisque in metus porttitor, viverra justo nec, euismod metus. Aliquam pharetra in est in placerat. Aenean vehicula odio in lacus cursus semper. Curabitur ac nisi accumsan, porta tellus eu, faucibus erat. Nullam pharetra nulla in dui sollicitudin feugiat vel et tortor. Aliquam sit amet metus eget dui elementum pretium. Pellentesque et luctus libero, a consequat ipsum.</p>
+						<p>
+							Total Resource Community Development Organization is a nonprofit that feeds and houses those in need, develops leadership and character in the next generation.
+						</p>
+						<p>
+							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we assist, would greatly appreciate it. <a href="/how-to-help">Read more on how to help</a>
+						</p>
 					</div>
 				</div>
 			</section>
@@ -81,7 +87,7 @@ get_header(); ?>
 				<div class="row align-center align-middle">
 					<div class="columns shrink">
 						<button class="button primary">
-							Button
+							Donate Now
 						</button>
 					</div>
 				</div>
