@@ -29,7 +29,7 @@
 
 .hero {
 	@include full-width;
-	background-image: url(http://placekitten.com/g/1500);
+	background-image: url('../../../assets/hero.jpg');
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;

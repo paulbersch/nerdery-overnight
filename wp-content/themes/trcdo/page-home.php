@@ -88,9 +88,7 @@ get_header(); ?>
 			<section class="final-cta">
 				<div class="row align-center align-middle">
 					<div class="columns shrink">
-						<button class="button primary">
-							Donate Now
-						</button>
+						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UFUB78XUR5BW4" class="button primary">Donate now</a>
 					</div>
 				</div>
 			</section>
