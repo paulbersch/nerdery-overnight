@@ -61,7 +61,7 @@
 	margin: 1rem 0;
 	text-align: center;
 	h1 {
-		color: #21BBFF;
+		color: $primary-color;
 	}
 	&:nth-of-type(2) {
 	position: relative;
@@ -100,6 +100,10 @@
 
 .banner-content {
 	background: $medium-gray;
+	padding: 1rem auto;
+	p {
+		color: $white;
+	}
 }
 
 $colors-list: $primary-color $secondary-color $success-color $warning-color $alert-color;
