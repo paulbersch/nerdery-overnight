@@ -45,3 +45,17 @@
     }
   }
 }
+.nav-menu{
+  margin-top: 5rem;
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 1 0 100%;
+
+   &:first-of-type, &:nth-of-type(2) {
+      flex: 1 0 50%;
+     }
+  }
+}
