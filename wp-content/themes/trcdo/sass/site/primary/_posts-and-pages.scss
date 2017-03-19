@@ -40,12 +40,22 @@
 	}
 }
 
-.hero-headline,
 .program-headline {
 	margin: 1rem auto 2rem;
 	@include breakpoint(large) {
 		text-align: center;
 	};
+}
+
+.hero-headline {
+	font-size: 1.5rem;
+	margin: 1rem auto 2rem;
+	color: $dark-gray;
+	text-align: left;
+	font-weight: 600;
+	p {
+		margin: 0;
+	}
 }
 
 .button.hero-cta {
@@ -123,7 +133,7 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	padding: 0 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
-    h1 {
+    h2 {
     	text-align: center;
     }
   }

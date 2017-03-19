@@ -24,49 +24,51 @@ get_header(); ?>
 			<section class="banner">
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-3 banner-metric">
-						<h2>39,857</h2>
+						<h1>39,857</h1>
 						People Served
 					</div>
 					<div class="columns small-12 large-3 banner-metric">
-						<h2>$5.75 Million</h2>
+						<h1>$5.75 Million</h1>
 						In Assistance Received
 					</div>
 					<div class="columns small-12 large-3 banner-metric">
-						<h2>538</h2>
+						<h1>538</h1>
 						Homes Saved
 					</div>
 				</div>
 			</section>
-			<section class="programs" data-equalizer data-equalize-on="large">
-				<h1 class="program-headline">Programs</h1>
-				<div class="row align-center align-middle">
+			<section class="programs">
+				<h3 class="program-headline">Programs</h3>
+				<div class="row align-center align-middle" data-equalizer>
 					<div class="columns small-12 large-4">
 						<div class="program-1" data-equalizer-watch>
-							<h1>Housing Assistance</h1>
-							<p>We offer financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
+							<h2>Housing Assistance<br/></h2>
+							<p>
+								<br />
+							We offer financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-2" data-equalizer-watch>
-							<h1>Utilities and Energy Assistance</h1>
+							<h2>Utilities and Energy Assistance</h2>
 							<p>We can help you meet your gas and electric bills, and connect to services to better insulate your home.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-3" data-equalizer-watch>
-							<h1>Harvest for the World Food Pantry</h1>
+							<h2>Harvest for the World Food Pantry</h2>
 							<p>Our food pantry feeds hundreds of families and provides worthwhile community service opportunities.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-4" data-equalizer-watch>
-							<h1>Youth Services</h1>
+							<h2>Youth Services</h2>
 							<p>We use a wide variety of programs focused on empowerment and prevention to help at-risk youth between 8 and 21 years of age.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-5" data-equalizer-watch>
-						<h1>Health Services</h1>
+						<h2>Health Services</h2>
 						<p>We empower people make realistic changes that lead to a healthy lifestyle. We direct a variety of fun year-round activities.</p>
 					</div>
 				</div>
