@@ -29,7 +29,9 @@
 
 .hero {
 	@include full-width;
-	background-image: url('../../../assets/hero.jpg');
+	background-image: url('./assets/hero.jpg');
+  background-size: cover;
+  background-position: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
