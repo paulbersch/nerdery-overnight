@@ -66,7 +66,7 @@ get_header(); ?>
 					</div>
 					<div class="columns small-12 large-4">
 						<div class="program-5" data-equalizer-watch>
-						<h1>Health Screenings and Services</h1>
+						<h1>Health Services</h1>
 						<p>We empower people make realistic changes that lead to a healthy lifestyle. We direct a variety of fun year-round activities.</p>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ get_header(); ?>
 							Total Resource Community Development Organization is a nonprofit that feeds and houses those in need, develops leadership and character in the next generation.
 						</p>
 						<p>
-							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we assist, would greatly appreciate it.
+							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we assist, would greatly appreciate it. <a href="/how-to-help">Read more on how to help</a>
 						</p>
 					</div>
 				</div>
@@ -87,7 +87,7 @@ get_header(); ?>
 				<div class="row align-center align-middle">
 					<div class="columns shrink">
 						<button class="button primary">
-							Button
+							Donate Now
 						</button>
 					</div>
 				</div>
