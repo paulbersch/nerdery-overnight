@@ -8,19 +8,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="hero align-center align-middle">
-					<div class="columns small-3">
+					<div class="columns small-6">
 						<h1 class="hero-headline">
 							I am a header.
 						</h1>
 					</div>
-					<div class="columns small-1">
-						<button class="button hero-cta">
+					<div class="columns shrink">
+						<button class="button action hero-cta">
 							Button
 						</button>
 					</div>
 				</div>
 			</section>
-			<section class="banner-">
+			<section class="banner">
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-3 banner-metric">
 						<h1>85858595</h1>
@@ -36,37 +36,37 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-			<section class="programs">
+			<section class="programs" data-equalizer data-equalize-on="large">
 				<h1 class="program-headline">Programs</h1>
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-4">
-						<div class="program-1">
+						<div class="program-1" data-equalizer-watch>
 							<h1>Header</h1>
 							<p>Lorem Ipsum</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
-						<div class="program-2">
+						<div class="program-2" data-equalizer-watch>
 							<h1>Header</h1>
 							<p>Lorem Ipsum</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
-						<div class="program-3">
+						<div class="program-3" data-equalizer-watch>
 							<h1>Header</h1>
 							<p>Lorem Ipsum</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
-						<div class="program-4">
+						<div class="program-4" data-equalizer-watch>
 							<h1>Header</h1>
 							<p>Lorem Ipsum</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-4">
-						<div class="program-5">
+						<div class="program-5" data-equalizer-watch>
 						<h1>Header</h1>
-						<p>Lorem Ipsum</p>
+						<p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
 					</div>
 				</div>
 			</section>
@@ -77,9 +77,17 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+			<section class="final-cta">
+				<div class="row align-center align-middle">
+					<div class="columns shrink">
+						<button class="button primary">
+							Button
+						</button>
+					</div>
+				</div>
+			</section>
 		</main>
 	</div>
 
 <?php
-get_sidebar();
 get_footer();
