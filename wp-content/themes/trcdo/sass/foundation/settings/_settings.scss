@@ -122,11 +122,11 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 32),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
@@ -241,10 +241,10 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 1.2rem 7.6rem;
+$button-padding: 1.7rem 2rem;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: get-color(action);
+$button-background: get-color(primary);
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $white;
@@ -252,7 +252,7 @@ $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 2.5rem,
+  default: 1.5rem,
   large: 5rem,
 );
 $button-palette: $foundation-palette;

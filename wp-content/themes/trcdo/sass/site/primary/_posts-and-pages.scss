@@ -40,7 +40,6 @@
 	}
 }
 
-.hero-headline,
 .program-headline {
 	margin: 1rem auto 2rem;
 	@include breakpoint(large) {
@@ -48,7 +47,19 @@
 	};
 }
 
+.hero-headline {
+	font-size: 1.5rem;
+	margin: 1rem auto 2rem;
+	color: $dark-gray;
+	text-align: left;
+	font-weight: 600;
+	p {
+		margin: 0;
+	}
+}
+
 .button.hero-cta {
+	padding: 1.7rem 7.875rem;
 	@include breakpoint(large) {
 		text-align: center;
 		margin: auto;
@@ -57,6 +68,10 @@
 
 .banner {
 	margin: 2rem 0;
+}
+
+.banner-content {
+	padding: 1rem 0;
 }
 
 .banner-content,
@@ -123,7 +138,11 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	padding: 0 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
-    h1 {
+    min-height: 18rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    h2 {
     	text-align: center;
     }
   }
