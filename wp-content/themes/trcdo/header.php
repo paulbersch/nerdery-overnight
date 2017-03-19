@@ -21,6 +21,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="off-canvas-wrapper">
+<div class="off-canvas position-right" id="mobileNav" data-off-canvas>
+	<!-- Your menu or Off-canvas content goes here -->
+	<button class="close-button" aria-label="Close menu" type="button" data-close>
+	  <span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+<button type="button" class="button" data-toggle="mobileNav">Open Menu</button>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'trcdo' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
@@ -35,6 +44,7 @@
 					<a href="#" class="button primary">Donate</a>
 				</div>
 		</div><!-- .site-branding -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
