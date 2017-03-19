@@ -301,3 +301,30 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
     }
   }
 }
+
+.accent {
+  background-color: $accent-color;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($accent-color, 10%);
+  }
+}
+
+.cta-group {
+  display: flex;
+  margin: 0 -1rem;
+
+  @media screen and (min-width: 64em) {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.footer-cta {
+  flex: 1 0 auto;
+
+  @media screen and (min-width: 64em) {
+    max-width: 20rem;
+  }
+}

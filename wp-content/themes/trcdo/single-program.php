@@ -68,12 +68,16 @@ get_header(); ?>
             echo '<div class="section-cta">';
                 echo '<div class="row align-center align-middle text-center">';
                     echo '<h3 class="small-12">Ways to help</h3>';
-                    echo '<div class="row">';
-                        foreach( $cta_selected as $cta ): 
-                            echo '<li>' . $cta; '</li>';
-                        endforeach; 
-                    echo '</div>';
                 echo '</div>';
+                    echo '<div class="cta-group">';
+                    if (in_array("donate", $cta_selected)) {
+                        echo '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UFUB78XUR5BW4" class="button primary footer-cta">Donate</a>';
+                    }
+
+                    if (in_array("volunteer", $cta_selected)) {
+                        echo '<a href="/program/harvest-for-the-world-food-pantry/" class="button accent footer-cta">Volunteer</a>';
+                    }
+                    echo '</div>';
             echo '</div>';
             endif; 
         ?>
