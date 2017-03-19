@@ -23,7 +23,8 @@ deployment:
     branch: master
     commands:
       - npm install
-        #yolo
-      - git add -f ./wp-content/themes/trcdo/
+      # yolo
+      - git add -f wp-content/themes/trcdo/app.min.js
+      - git add -f wp-content/themes/trcdo/style.css
       - git commit -m 'Generated Assets!'
       - git push git@git.wpengine.com:production/trcdo.git master
