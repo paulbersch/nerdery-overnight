@@ -1,5 +1,10 @@
 .site-branding{
-  
+  .button {
+    padding: 1em 2em;
+    a:visited {
+      color: white;
+    }
+  }
   li {
    list-style:none;
   }
