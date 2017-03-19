@@ -44,9 +44,7 @@
 
 .program-headline {
 	margin: 1rem auto 2rem;
-	@include breakpoint(large) {
-		text-align: center;
-	};
+	text-align: center;
 }
 
 .hero-headline {
@@ -61,8 +59,9 @@
 }
 
 .button.hero-cta {
-	padding: 1.7rem 7.875rem;
+   padding: 1.7rem 5rem;
 	@include breakpoint(large) {
+		padding: 1.7rem 7.875rem;
 		text-align: center;
 		margin: auto;
 	};
@@ -137,7 +136,7 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
 @each $current-color in $colors-list {
   $i: index($colors-list, $current-color);
   .program-#{$i} {
-  	padding: 0 1rem;
+  	padding: 1rem;
   	margin-top: 1.5rem;
     background-color: $current-color;
     display: flex;
@@ -145,6 +144,7 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
     justify-content: space-around;
 		@include breakpoint(large) {
       min-height: 18rem;
+  		padding: 0 1rem;
     }
     h2 {
     	text-align: center;

@@ -8,13 +8,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="hero align-center align-middle">
-					<div class="columns small-6">
+					<div class="columns small-10 large-6">
 						<div class="hero-headline">
 							<p>Total Resource CDO has been providing community services in Illinois since 1999, helping thousands of families, providing local leadership, and directing millions of dollars of aid to those in need.</p>
 							<p>All of our services are free.</p>
 						</div>
 					</div>
-					<div class="columns shrink">
+					<div class="columns">
 						<button class="button action hero-cta">
 							Need Help?
 						</button>
