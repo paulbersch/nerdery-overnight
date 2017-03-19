@@ -147,3 +147,10 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
     }
   }
 }
+
+.entry-header {
+	margin-top: 3rem;
+	.entry-title {
+		font-size: 2rem;
+	}
+}
