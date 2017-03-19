@@ -10,11 +10,11 @@ get_header(); ?>
 			<section class="hero align-center align-middle">
 					<div class="columns small-10 large-6">
 						<div class="hero-headline">
-							<p>Total Resource CDO has been providing community services in Illinois since 1999, helping thousands of families, providing local leadership, and directing millions of dollars of aid to those in need.</p>
+							<p>Total Resource Community Development Organization (TRCDO) has been providing community services in Illinois since 1999, helping thousands of families, providing local leadership, and directing millions of dollars of aid to those in need.</p>
 							<p>All of our services are free.</p>
 						</div>
 					</div>
-					<div class="columns">
+					<div class="columns shrink">
 						<button class="button action hero-cta">
 							Need Help?
 						</button>
@@ -42,16 +42,15 @@ get_header(); ?>
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-3">
 						<div class="program-1">
-							<h2>Housing Assistance<br/></h2>
+							<h2>Housing Assistance</h2>
 							<p>
-								<br />
-							We offer financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
+							We are a HUD aprroved housing counseling agency  that offers financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-3 large-offset-1">
 						<div class="program-2">
 							<h2>Utilities and Energy Assistance</h2>
-							<p>We can help you meet your gas and electric bills, and connect to services to better insulate your home.</p>
+							<p>As a certified CEDA site, we can help you meet your gas and electric bills, and connect to services to better insulate your home.</p>
 						</div>
 					</div>
 					<div class="columns small-12 large-3 large-offset-1">
@@ -69,7 +68,7 @@ get_header(); ?>
 					<div class="columns small-12 large-3 large-offset-1">
 						<div class="program-5">
 						<h2>Health Services</h2>
-						<p>We empower people make realistic changes that lead to a healthy lifestyle. We direct a variety of fun year-round activities.</p>
+						<p>We empower people to make realistic changes that lead to a healthy lifestyle.</p>
 					</div>
 				</div>
 			</section>
@@ -77,7 +76,7 @@ get_header(); ?>
 				<div class="row align-center align-middle">
 					<div class="columns small-12 large-9">
 						<p>
-							Total Resource Community Development Organization is a nonprofit that feeds and houses those in need, develops leadership and character in the next generation.
+							Total Resource CDO is a nonprofit that provides and facilitates life-changing services that meet the needs of families and individuals.
 						</p>
 						<p>
 							As an organization we are enabled by the generous grants and donors that make our work possible. We operate on thin margins in order to do as much good as possible for those in need. If you can find it in your heart to help us continue our mission we, and the families we assist, would greatly appreciate it. <a href="/how-to-help">Read more on how to help</a>
