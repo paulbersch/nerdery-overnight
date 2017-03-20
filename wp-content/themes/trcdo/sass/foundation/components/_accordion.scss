@@ -24,7 +24,7 @@ $accordion-item-color: $primary-color !default;
 
 /// Default background color on hover for items in a Menu.
 /// @type Color
-$accordion-item-background-hover: $light-gray !default;
+$accordion-item-background-hover: $accent-color;
 
 /// Default padding of an accordion item.
 /// @type Number | List
@@ -32,15 +32,15 @@ $accordion-item-padding: 1.25rem 1rem !default;
 
 /// Default background color of tab content.
 /// @type Color
-$accordion-content-background: $white !default;
+$accordion-content-background: $accent-color;
 
 /// Default border color of tab content.
 /// @type Color
-$accordion-content-border: 1px solid $light-gray !default;
+$accordion-content-border: none;
 
 /// Default text color of tab content.
 /// @type Color
-$accordion-content-color: $body-font-color !default;
+$accordion-content-color: $white;
 
 /// Default padding for tab content.
 /// @type Number | List
@@ -98,14 +98,14 @@ $accordion-content-padding: 1rem !default;
   @if $accordion-plusminus {
     &::before {
       position: absolute;
-      top: 50%;
+      top: calc(50% - 1.2rem);
       #{$global-right}: 1rem;
-      margin-top: -0.5rem;
+      font-size: 2.4rem;
       content: '+';
     }
 
     .is-active > &::before {
-      content: '\2013';
+      content: 'x';
     }
   }
 }
@@ -142,6 +142,25 @@ $accordion-content-padding: 1rem !default;
 
   .accordion-title {
     @include accordion-title;
+  }
+
+  .accordion-primary {
+    background-color: $primary-color;
+    border-top: 3px solid $white;
+    border-right: none;
+    border-bottom: 3px solid $white;
+    border-left: none;
+    color: $accent-color;
+  }
+
+  .is-active .accordion-primary {
+    background-color: $accent-color;
+    border-bottom-color: $accent-color;
+    color: $primary-color;
+  }
+
+  .accordion-header {
+    font-family: 'Lato', sans-serif;
   }
 
   .accordion-content {
