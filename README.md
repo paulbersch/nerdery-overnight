@@ -15,3 +15,12 @@ Hola! 😄 Here we go:
 * Colt Borg 🐙🌮🐙
 [Mica](https://github.com/micada)
 9. :sparkles:
+
+## Installation and Running
+1) clone
+2) npm i
+3) npm run build
+4) docker-compose up -d wordpress
+5) docker-compose up db-backup
+6) docker-compose stop db-backup
+7) npm start
