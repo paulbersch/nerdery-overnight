@@ -45,16 +45,17 @@
 .program-headline {
 	margin: 1rem auto 2rem;
 	text-align: center;
+        font-size: 3rem;
 }
 
 .hero-headline {
 	font-size: 1.5rem;
 	margin: 1rem auto 2rem;
 	color: $dark-gray;
-	text-align: left;
+	text-align: center;
 	font-weight: 600;
 	p {
-		margin: 0;
+		margin: 0 0 1rem 0;
 	}
 }
 
@@ -79,6 +80,13 @@
 .programs,
 .final-cta {
 	margin: 3rem 0;
+}
+
+.programs {
+    $grid-column-gutter: (
+        small: 40px,
+        medium: 50px,
+    );
 }
 
 .banner-metric {
@@ -140,14 +148,23 @@ $colors-list: $primary-color $secondary-color $success-color $warning-color $ale
   	margin-top: 1.5rem;
     background-color: $current-color;
     display: flex;
+    border: 1px solid white;
+    color: inherit;
     flex-flow: column wrap;
     justify-content: space-around;
 		@include breakpoint(large) {
-      min-height: 18rem;
+      min-height: 15rem;
     }
+
     h2 {
     	text-align: center;
+        font-size: 2em;
     }
+  }
+
+  .program-#{$i}:hover {
+    border: 1px solid black;
+    color: inherit;
   }
 }
 

@@ -10,14 +10,14 @@ get_header(); ?>
 			<section class="hero align-center align-middle">
 					<div class="columns small-10 large-6">
 						<div class="hero-headline">
-							<p>Total Resource Community Development Organization (TRCDO) has been providing community services in Illinois since 1999, helping thousands of families, providing local leadership, and directing millions of dollars of aid to those in need.</p>
-							<p>All of our services are free.</p>
+							<p>Total Resource Community Development Organization (TRCDO) has been providing a diversified scope of community services since 1999, helping thousands of families by providing leadership &amp; advocacy, training &amp; development, and directing millions of dollars in financial assistance and resources to those in need.</p>
+							<p>All of our organization's services are free to our clients.</p>
 						</div>
 					</div>
 					<div class="columns shrink">
-						<button class="button action hero-cta">
+						<a class="button action hero-cta" href="<?php echo get_permalink(70); ?>">
 							Need Help?
-						</button>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -40,35 +40,36 @@ get_header(); ?>
 			<section class="programs">
 				<h3 class="program-headline">Programs</h3>
 				<div class="row align-center align-middle">
-					<div class="columns small-12 large-3">
-						<div class="program-1">
+					<div class="columns small-12 large-4">
+                                        <a class="program-1" href="<?php echo get_permalink(37);?>">
 							<h2>Housing Assistance</h2>
 							<p>
 							We are a HUD aprroved housing counseling agency  that offers financial help with mortgage payments, affordable housing coordination, and homeownership cost management.</p>
-						</div>
+						</a>
 					</div>
-					<div class="columns small-12 large-3 large-offset-1">
-						<div class="program-2">
+					<div class="columns small-12 large-4">
+						<a class="program-2" href="<?php echo get_permalink(86);?>">
 							<h2>Utilities and Energy Assistance</h2>
 							<p>As a certified CEDA site, we can help you meet your gas and electric bills, and connect to services to better insulate your home.</p>
-						</div>
+						</a>
 					</div>
-					<div class="columns small-12 large-3 large-offset-1">
-						<div class="program-3">
+					<div class="columns small-12 large-4">
+						<a class="program-3" href="<?php echo get_permalink(87);?>">
 							<h2>Harvest for the World Food Pantry</h2>
 							<p>Our food pantry feeds hundreds of families and provides worthwhile community service opportunities.</p>
-						</div>
+						</a>
 					</div>
-					<div class="columns small-12 large-3">
-						<div class="program-4">
+					<div class="columns small-12 large-4">
+						<a class="program-4" href="<?php echo get_permalink(89);?>">
 							<h2>Youth Services</h2>
 							<p>We use a wide variety of programs focused on empowerment and prevention to help at-risk youth between 8 and 21 years of age.</p>
-						</div>
+						</a>
 					</div>
-					<div class="columns small-12 large-3 large-offset-1">
-						<div class="program-5">
+					<div class="columns small-12 large-4">
+						<a class="program-5" href="<?php echo get_permalink(88);?>">
 						<h2>Health Services</h2>
 						<p>We empower people to make realistic changes that lead to a healthy lifestyle.</p>
+                                                </a>
 					</div>
 				</div>
 			</section>
