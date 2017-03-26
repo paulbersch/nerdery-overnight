@@ -139,6 +139,23 @@
 	}
 }
 
+.scorecards-sidebar {
+    background-color: $alert-color;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    li {
+        display: inline-block;
+        padding: 1rem;
+    }
+}
+
 $colors-list: $primary-color $secondary-color $success-color $warning-color $alert-color;
 
 @each $current-color in $colors-list {
