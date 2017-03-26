@@ -40,6 +40,9 @@
   li:nth-child(5) {
     border-bottom-color: $alert-color;
   }
+  li:last-child {
+    background-color: $primary-color;
+  }
 
   .menu li {
     flex: 1 0 20%;
