@@ -108,7 +108,7 @@ add_action( 'widgets_init', 'trcdo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function trcdo_scripts() {
-    wp_enqueue_style('trcdo-style', get_stylesheet_uri(), array(), filemtime(get_stylesheet_directory() . "/style.css"));
+	wp_enqueue_style('trcdo-style', get_stylesheet_uri(), array(), filemtime(get_stylesheet_directory() . "/style.css"));
 
 	wp_enqueue_script('jquery');
 
