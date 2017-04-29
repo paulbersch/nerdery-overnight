@@ -1,4 +1,4 @@
-version: '2'
+version: '2.1'
 
 services:
    db:
@@ -14,21 +14,10 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
 
-   db-backup:
-       depends_on:
-         - db
-       image: mysql:5.7
-       restart: always
-       command: bash -c "apt-get update &&
-           apt-get install -y wget &&
-           wget -O db-latest.sql 'http://oc.tl/files/db-latest.sql' &&
-           sed 's/trcdo.wpengine.com/localhost:6969/g' db-latest.sql > db-latest-changed.sql &&
-           mysql -uwordpress -pwordpress -hdb wordpress< db-latest-changed.sql"
-
    wordpress:
      depends_on:
        - db
-     image: wordpress:latest
+     image: conetix/wordpress-with-wp-cli
      ports:
        - "6969:80"
      restart: always
@@ -37,5 +26,6 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
      volumes:
        - ./wp-content:/var/www/html/wp-content
+       - ./backups:/tmp/backups
 volumes:
     db_data:
